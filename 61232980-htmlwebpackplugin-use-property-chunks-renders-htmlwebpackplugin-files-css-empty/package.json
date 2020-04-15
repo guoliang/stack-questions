@@ -1,0 +1,31 @@
+{
+  "name": "webpack-sandbox",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "build": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guoliang",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/angular": "^1.7.0",
+    "@types/jquery": "^3.3.34",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^4.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "angular": "^1.7.9",
+    "jquery": "^3.5.0"
+  }
+}

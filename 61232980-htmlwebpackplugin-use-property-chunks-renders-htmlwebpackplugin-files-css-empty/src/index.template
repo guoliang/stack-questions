@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<% for (var item in htmlWebpackPlugin.options.meta) { %>
+	<meta name="<%= item %>" content="<%= htmlWebpackPlugin.options.meta[item] %>">
+	<% } %>
+	<title>Stack Question</title>
+
+	<!-- CSS Bundles --><% for (var item in htmlWebpackPlugin.files.css) { %>
+	<link href="<%= htmlWebpackPlugin.files.css[item] %>" rel="stylesheet">
+	<% } %>
+	<!-- CSS files Gone -->
+
+	<!-- JavaScript Vendors --><% for (var item in htmlWebpackPlugin.options.chunks ) { %>
+	<script src="<%= htmlWebpackPlugin.options.chunks[item] %>"></script>
+	<% } %>
+	<!-- Hash postfix gone -->
+	<% for (var item in htmlWebpackPlugin.files.js ) { %>
+	<script src="<%= htmlWebpackPlugin.files.js[item] %>"></script>
+	<% } %>
+
+</head>
+
+<body>
+	<div ng-app="app"></div>
+</body>
+</html>
