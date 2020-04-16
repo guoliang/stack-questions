@@ -63,16 +63,7 @@ module.exports = {
 
 		new HtmlWebpackPlugin({
 			filename: Path.resolve(__dirname, "dist/index.html"),
-
-			chunks: [
-				`jquery.js`,
-				`angular.js`,
-				`app.js`,
-			],
-			chunksSortMode: "manual",
-
 			hash: true,
-			inject: false,
 			template: Path.join(__dirname, "/src/index.template"),
 		})
 	],
